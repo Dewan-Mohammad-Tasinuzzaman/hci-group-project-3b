@@ -2,6 +2,7 @@
 .navbar-bottom {
     
     position: fixed;
+    z-index: 50;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -36,8 +37,9 @@
                 height: 100%;
 
                 &--icon {
-                    width: 2.8rem;
+                    width: 2.2rem;
                     height: auto;
+                    transition: all 0.1s ease-out;
                 }
 
                 &--text {
@@ -53,4 +55,7 @@
 .active_link {
     background-color: white;
     border-top: 5px solid #2A2A2A !important;
+}
+.active_link-icon {
+    width: 2.8rem;
 }

@@ -1,3 +1,17 @@
 @import '../variables';
 @import '../utils';
 @import '../mixins';
+
+.home {
+    
+    padding-bottom: 25rem;
+
+    &__welcome-header {
+        font-weight: 600;
+        color: var(--color-tertiary-dark);
+    }
+
+    &__suggestions {
+        margin-top: 3rem;
+    }
+}

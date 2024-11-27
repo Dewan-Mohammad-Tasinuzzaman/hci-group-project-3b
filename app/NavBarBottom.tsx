@@ -19,20 +19,20 @@ const NavBarBottom = () => {
       <div className="navbar-bottom__contents">
         <Link href={`/`} className={`navbar-bottom__contents_item ${isActive("/") ? "active_link" : ""}`}>
           <div className="navbar-bottom__contents_item-content">
-            <Image src={Home_Icon} alt="Home Icon" unoptimized={true} className="navbar-bottom__contents_item-content--icon" />
+            <Image src={Home_Icon} alt="Home Icon" unoptimized={true} className={`navbar-bottom__contents_item-content--icon ${isActive("/") ? "active_link-icon" : ""}`} />
             <p className="navbar-bottom__contents_item-content--text">Home</p>
           </div>
         </Link>
         <Link href={`/inventory`} className={`navbar-bottom__contents_item ${isActive("/inventory") ? "active_link" : ""}`}>
           <div className="navbar-bottom__contents_item-content">
-            <Image src={Inventory_Icon} alt="Inventory Icon" unoptimized={true} className="navbar-bottom__contents_item-content--icon" />
+            <Image src={Inventory_Icon} alt="Inventory Icon" unoptimized={true} className={`navbar-bottom__contents_item-content--icon ${isActive("/inventory") ? "active_link-icon" : ""}`} />
             <p className="navbar-bottom__contents_item-content--text">Kitchen Inventory</p>
           </div>
         </Link>
         <Link href={`/recipes`} className={`navbar-bottom__contents_item ${isActive("/recipes") ? "active_link" : ""}`}>
           <div className="navbar-bottom__contents_item-content">
-            <Image src={Recipe_Icon} alt="Recipe Icon" unoptimized={true} className="navbar-bottom__contents_item-content--icon" />
-            <p className="navbar-bottom__contents_item-content--text">Recipes</p>
+            <Image src={Recipe_Icon} alt="Recipe Icon" unoptimized={true} className={`navbar-bottom__contents_item-content--icon ${isActive("/recipes") ? "active_link-icon" : ""}`} />
+            <p className="navbar-bottom__contents_item-content--text">Saved Recipes</p>
           </div>
         </Link>
       </div>

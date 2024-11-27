@@ -1,0 +1,143 @@
+@import '../variables';
+@import '../utils';
+@import '../mixins';
+
+
+.suggestions {
+
+    &__header {
+
+        display: flex;
+        align-items: center;
+
+        &_text {
+            margin-right: auto;
+        }
+        &_filter {
+
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            cursor: pointer;
+
+            &-text {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+            &-icon {
+                width: 2.6rem;
+                height: auto;
+            }
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+}
+
+
+.suggestions-item {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__imgbox {
+        
+        position: relative;
+        width: 100%;
+        height: 25rem;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &_img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__title {
+        margin-top: 1rem;
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: var(--color-tertiary-dark);
+    }
+    &__time {
+
+        font-weight: 600;
+
+        &_value {
+            font-weight: 400;
+        }
+    }
+    &__button {
+        width: fit-content;
+        color: var(--color-white);
+        background-color: var(--color-tertiary-dark);
+        padding: 1rem 5rem;
+        border-radius: 1000px;
+        transition: all .3s ease-out;
+
+        &:hover {
+            background-color: var(--color-tertiary);
+        }
+    }
+}
+
+
+.filter-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter-popup {
+
+    background-color: var(--color-white);
+    min-width: 40rem;
+    padding: 4rem;
+    border-radius: 10px;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: var(--color-tertiary-dark);
+    }
+
+    &__options {
+
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+
+        &_label {
+
+            &-input {
+                margin-right: 1rem;
+            }
+        }
+
+        &_close {
+            margin-top: 1rem;
+            display: inline-block;
+            width: 100%;
+            padding: 1rem 3rem;
+            color: var(--color-white);
+            background-color: var(--color-tertiary-dark);
+            border-radius: 2px;
+        }
+    }
+}
