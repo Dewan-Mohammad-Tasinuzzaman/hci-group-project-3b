@@ -138,6 +138,12 @@
             color: var(--color-white);
             background-color: var(--color-tertiary-dark);
             border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                background-color: rgb(51, 51, 51);
+            }
         }
     }
 }
