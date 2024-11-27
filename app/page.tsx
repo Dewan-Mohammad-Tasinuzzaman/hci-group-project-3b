@@ -6,7 +6,7 @@ import "../styles/main.scss"
 export default function Home() {
   return (
     <main>
-      HOME
+      <p className="">HOME</p>
     </main>
   )
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import "../styles/main.scss"
+import "../../styles/main.scss"
 
 const RecipesPage = () => {
   return (
