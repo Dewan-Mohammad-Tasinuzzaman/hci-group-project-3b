@@ -4,7 +4,9 @@
 
 .inventory {
 
-    &-header {
+    padding-bottom: 25rem;
+
+    &__header {
         font-weight: 600;
         color: var(--color-tertiary-dark);
     }

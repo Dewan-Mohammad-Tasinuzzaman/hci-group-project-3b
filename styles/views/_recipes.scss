@@ -1,3 +1,62 @@
 @import '../variables';
 @import '../utils';
 @import '../mixins';
+
+
+.saved-recipes {
+
+    padding-bottom: 25rem;
+
+    &__header {
+        font-size: 4.2rem;
+        font-weight: 600;
+        color: var(--color-tertiary-dark);
+    }
+
+    &__suggestions {
+        margin-top: 3rem;
+    }
+}
+
+.saved-options {
+
+    &__header {
+
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+
+        &_search-bar {
+            margin-right: auto;
+            font-size: 1.4rem;
+            width: 90%;
+            border: none;
+            background-color: rgb(240, 240, 240);
+            padding: 2rem 3rem;
+            border-radius: 1000px;
+        }
+        &_filter {
+
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            cursor: pointer;
+
+            &-text {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+            &-icon {
+                width: 2.6rem;
+                height: auto;
+            }
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+}

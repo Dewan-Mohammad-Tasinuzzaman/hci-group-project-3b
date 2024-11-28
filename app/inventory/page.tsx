@@ -77,7 +77,7 @@ const KitchenInventoryPage = () => {
 
   return (
     <main className="inventory page-margins">
-      <h1 className="inventory-header">Inventory</h1>
+      <h1 className="inventory__header">Inventory</h1>
 
       <div className="inventory__add-items">
         <h2 className="inventory__add-items_title">Add Items</h2>
