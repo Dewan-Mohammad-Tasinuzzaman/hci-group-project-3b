@@ -29,7 +29,7 @@ const LoginPage = () => {
         unoptimized={true}
         className="login__icon"
       />
-      <h1 className="login__header">- Log In -</h1>
+      <h1 className="login__header">- Grocery App -</h1>
       <form onSubmit={handleLoginSubmit} className="login__form">
         <div className="login__field">
           <label htmlFor="email" className="login__label">Email:</label>

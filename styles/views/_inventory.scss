@@ -1,3 +1,210 @@
 @import '../variables';
 @import '../utils';
 @import '../mixins';
+
+.inventory {
+
+    &-header {
+        font-weight: 600;
+        color: var(--color-tertiary-dark);
+    }
+
+    &__add-items {
+
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &_title {
+
+        }
+        &_description {
+            font-size: 2rem;
+        }
+        &_button {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            width: fit-content;
+            color: var(--color-white);
+            background-color: var(--color-dark-2);
+            padding: 1.5rem 5rem;
+            border-radius: 1000px;
+            transition: all .3s ease-out;
+
+            &:hover {
+                background-color: var(--color-tertiary);
+            }
+        }
+    }
+
+
+    &__search-bar {
+
+        margin-top: 5rem;
+
+        &_input {
+            font-size: 1.4rem;
+            width: 100%;
+            border: none;
+            background-color: rgb(240, 240, 240);
+            padding: 2rem 3rem;
+            border-radius: 1000px;
+        }
+    }
+
+    &__table-container {
+        margin-top: 2rem;
+    }
+    &__table {
+
+        &_header {
+
+            &-row {
+
+                background-color: var(--color-dark-2);
+
+                &--col {
+                    font-weight: 500;
+                    color: var(--color-white);
+                    padding: 1rem 3rem;
+                }
+            }
+        }
+
+
+        &_body {
+
+            &-row {
+
+                &--data {
+
+                    padding: 1rem 3rem;
+                    font-weight: 400;
+
+                    &---input {
+                        border: none;
+                        background-color: rgb(240, 240, 240);
+                        padding: 1rem 2rem;
+                        border-radius: 1000px;
+                    }
+
+                    &---button {
+
+                        font-weight: 500;
+                        color: var(--color-white);
+                        background-color: var(--color-dark-2);
+                        padding: 1rem 3rem;
+                        border-radius: 1000px;
+                        cursor: pointer;
+                        transition: all 0.3s ease-out;
+
+                        &:hover {
+                            background-color: var(--color-primary);
+                        }
+
+                        &-save {
+                            background-color: var(--add-green);
+
+                            &:hover {
+                                background-color: #27774b;
+                            }
+                        }
+                        
+                        &-remover {
+                            background-color: var(--required-red);
+
+                            &:hover {
+                                background-color: #883d3d;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// ADD NEW ITEM POPUP
+.inventory__add-form-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inventory__add-form {
+
+    background-color: var(--color-white);
+    min-width: 40rem;
+    padding: 4rem;
+    border-radius: 10px;
+
+    &_header {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: var(--color-tertiary-dark);
+    }
+
+    &_field {
+
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+
+        &-label {
+
+        }
+        &-input {
+            width: 100%;
+            border: none;
+            background-color: rgb(240, 240, 240);
+            padding: 1rem 2rem;
+        }
+    }
+    &_buttons {
+
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &-button {
+
+            font-weight: 500;
+            color: var(--color-white);
+            background-color: var(--color-dark-2);
+            padding: 1rem 3rem;
+            border-radius: 1000px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                background-color: rgb(63, 63, 63);
+            }
+
+            &--cancel {
+                background-color: var(--required-red);
+
+                &:hover {
+                    background-color: #883d3d;
+                }
+            }
+        }
+    }
+}

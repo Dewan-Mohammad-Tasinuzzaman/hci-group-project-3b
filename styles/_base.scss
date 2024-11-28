@@ -84,3 +84,32 @@ a {
         background-color: rgb(180, 180, 180);
     }
 };
+
+
+
+
+
+
+// Reset Table Styles
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  th, td {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: normal;
+  }
+  
+  table {
+    background-color: transparent;
+  }

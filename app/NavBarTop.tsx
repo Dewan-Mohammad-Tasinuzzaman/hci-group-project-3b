@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo_Full from '@/public/assets/svgs/logo-full.svg'
-import Menu_Icon_Light from '@/public/assets/svgs/menu_icon-light.svg'
+import Logout_Icon from '@/public/assets/svgs/logout_icon.svg'
 
 const NavBarTop = () => {
   return (
@@ -13,9 +13,9 @@ const NavBarTop = () => {
       <div className="navbar-top__contents">
         <Image src={Logo_Full} alt="Logo" unoptimized={true} className="navbar-top__contents_logo" />
         
-        <div className="navbar-top__contents_menu">
-          <Image src={Menu_Icon_Light} alt="Menu Icon" unoptimized={true} className="navbar-top__contents_menu-icon" />
-        </div>
+        <Link href={`/login`} className="navbar-top__contents_menu" title="Sign Out">
+          <Image src={Logout_Icon} alt="Menu Icon" unoptimized={true} className="navbar-top__contents_menu-icon" />
+        </Link>
       </div>
 
       {/* Can Add Further Code to Make a Menu Bar Appear upon Menu Button Click */}
