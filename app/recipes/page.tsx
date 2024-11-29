@@ -13,7 +13,7 @@ const RecipesPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const recipes = [
-    { image: "/assets/images/beef_burger_img.PNG", title: "Beef Burger", time: "16 mins", link: "/recipe-instructions", halal: true, vegan: false },
+    { image: "/assets/images/beef_burger_img.jpg", title: "Beef Burger", time: "16 mins", link: "/recipe-instructions", halal: true, vegan: false },
     { image: "/assets/images/tuna_salad_img.jpg", title: "Tuna Salad", time: "14 mins", link: "/recipe-instructions", halal: true, vegan: false },
     { image: "/assets/images/milk_shake_img.jpg", title: "Milk Shake", time: "11 mins", link: "/recipe-instructions", halal: true, vegan: false },
     { image: "/assets/images/chicken_alfredo_img.PNG", title: "Chicken Alfredo", time: "30 mins", link: "/recipe-instructions", halal: true, vegan: false },

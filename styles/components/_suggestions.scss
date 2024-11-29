@@ -7,11 +7,18 @@
 
     &__header {
 
+        margin-top: 2rem;
         display: flex;
         align-items: center;
 
-        &_text {
+        &_search-bar {
             margin-right: auto;
+            font-size: 1.6rem;
+            width: 90%;
+            border: none;
+            background-color: rgb(240, 240, 240);
+            padding: 2rem 3rem;
+            border-radius: 1000px;
         }
         &_filter {
 

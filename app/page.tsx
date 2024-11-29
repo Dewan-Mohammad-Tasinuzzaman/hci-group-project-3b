@@ -10,6 +10,7 @@ export default function Home() {
   
   const [isFilterPopupVisible, setFilterPopupVisible] = useState(false);
   const [filter, setFilter] = useState({ halal: false, vegan: false });
+  const [searchQuery, setSearchQuery] = useState("");
 
   const recipes = [
     { image: "/assets/images/chicken_alfredo_img.PNG", title: "Chicken Alfredo", time: "30 mins", link: "/recipe-instructions", halal: true, vegan: false },
@@ -17,7 +18,7 @@ export default function Home() {
     { image: "/assets/images/fruit_salad_img.jpg", title: "Fruit Salad", time: "8 mins", link: "/recipe-instructions", halal: true, vegan: true },
     { image: "/assets/images/milk_shake_img.jpg", title: "Milk Shake", time: "11 mins", link: "/recipe-instructions", halal: true, vegan: false },
     { image: "/assets/images/pulled_pork_img.jpg", title: "Pulled Pork", time: "32 mins", link: "/recipe-instructions", halal: false, vegan: false },
-    { image: "/assets/images/beef_burger_img.PNG", title: "Beef Burger", time: "16 mins", link: "/recipe-instructions", halal: true, vegan: false },
+    { image: "/assets/images/beef_burger_img.jpg", title: "Beef Burger", time: "16 mins", link: "/recipe-instructions", halal: true, vegan: false },
     { image: "/assets/images/tuna_salad_img.jpg", title: "Tuna Salad", time: "14 mins", link: "/recipe-instructions", halal: true, vegan: false },
   ];
 
@@ -38,6 +39,7 @@ export default function Home() {
   const filteredRecipes = recipes.filter((recipe) => {
     if (filter.halal && !recipe.halal) return false;
     if (filter.vegan && !recipe.vegan) return false;
+    if (searchQuery && !recipe.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
     return true;
   });
 
@@ -46,10 +48,18 @@ export default function Home() {
 
       <h1 className="home__welcome-header">Welcome Back!</h1>
 
-      {/* Today's Suggestions */}
+      {/* Suggested Recipes */}
+      <h2 className="home__header">Today's Suggestions</h2>
       <div className="home__suggestions suggestions">
         <div className="suggestions__header">
-          <h2 className="suggestions__header_text">Today's Suggestions</h2>
+          {/* Search Bar */}
+          <input
+            type="text"
+            placeholder="Search recipes..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="suggestions__header_search-bar"
+          />
           <div
             className="suggestions__header_filter"
             onClick={toggleFilterPopup}

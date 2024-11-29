@@ -7,3 +7,41 @@ button {
     outline: none;
     border: none;
 }
+
+.btn {
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1.5rem 5rem;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &-primary {
+
+        color: var(--color-white);
+        background-color: var(--color-dark-2);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            background-color: rgb(70, 70, 70);
+        }
+        &:active {
+            background-color: var(--color-dark-1);
+        }
+    }
+
+    &-stop {
+
+        color: var(--color-white);
+        background-color: var(--required-red);
+        box-shadow: 0 4px 15px rgba(207, 94, 94, 0.4);
+
+        &:hover {
+            background-color: rgb(243, 110, 110);
+        }
+        &:active {
+            background-color: rgb(190, 88, 88)
+        }
+    }
+}
