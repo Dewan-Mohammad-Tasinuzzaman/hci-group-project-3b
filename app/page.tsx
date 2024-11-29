@@ -49,7 +49,7 @@ export default function Home() {
       <h1 className="home__welcome-header">Welcome Back!</h1>
 
       {/* Suggested Recipes */}
-      <h2 className="home__header">Today's Suggestions</h2>
+      <h2 className="home__header">Today&apos;s Suggestions</h2>
       <div className="home__suggestions suggestions">
         <div className="suggestions__header">
           {/* Search Bar */}
