@@ -1,8 +1,11 @@
-## Group members info
+## Group Members:
 - **Michael Wang (100786569)**
 - **Zarraf Afnan (100880521)**
 - **.Mohammad (100755461)**
 - **Dewan Mohammad Tasinuzzaman (100791988)**
+
+# Project Prototype Video: https://www.youtube.com/watch?v=TUT05T03SIk
+__________________________________________________________
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
