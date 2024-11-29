@@ -86,7 +86,7 @@ const RecipeInstructionsPage = () => {
 
       <h3 className="instructions__title">Cooking Instructions:</h3>
       <p className="instructions__description">
-        To make a delicious beef burger, start by forming the ground beef into patties...
+        To make a delicious beef burger, start by forming the ground beef into patties, slightly larger than your buns, as they will shrink while cooking. Season both sides of the patties with a pinch of salt, chili powder, and your favorite beef seasoning. Heat a skillet or grill over medium-high heat and lightly coat it with cooking oil. Cook the patties for about 3-4 minutes per side, or until they reach your desired level of doneness, adding a slice of cheese on top during the last minute of cooking to melt. While the patties cook, slice the tomatoes and prepare the lettuce. Toast the buns lightly in the same skillet or grill for added flavor. Assemble the burger by layering the bottom bun with lettuce, the cooked patty with melted cheese, tomato slices, and then topping it with the other half of the bun. Serve immediately and enjoy!
       </p>
 
       {/* Start Button */}
