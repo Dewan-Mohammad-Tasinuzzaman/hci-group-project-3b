@@ -7,6 +7,15 @@
 ## Project Prototype Video: 
 https://www.youtube.com/watch?v=TUT05T03SIk
 
+## Screenshots:
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/login_page.PNG">
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/home_page.PNG">
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/inventory_page.PNG">
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/inventory_page-add_item.PNG">
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/recipe_instructions_page.PNG">
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/recipe_instructions_page-started.PNG">
+<img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/recipe_instructions_page-inventory.PNG">
+
 __________________________________________________________
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
