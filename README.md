@@ -1,3 +1,5 @@
+## Course: Human Computer Interaction (OTU - Fall 2024)
+
 ## Group Members:
 - **Michael Wang (100786569)**
 - **Zarraf Afnan (100880521)**
