@@ -9,9 +9,6 @@
 ## Project Prototype Video: 
 https://www.youtube.com/watch?v=TUT05T03SIk
 
-## Live Prototype Link: 
-https://hci-group-project-3b.vercel.app/
-
 ## Screenshots:
 <img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/login_page.PNG">
 <img src="https://raw.githubusercontent.com/Dewan-Mohammad-Tasinuzzaman/hci-group-project-3b/refs/heads/master/APP%20SCREENSHOTS/home_page.PNG">
